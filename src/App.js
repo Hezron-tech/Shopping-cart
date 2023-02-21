@@ -1,10 +1,17 @@
-import logo from './logo.svg';
+
 import './App.css';
+import { BrowserRouter as Router, Routes,Route } from 'react-router-dom';
 
 function App() {
   return (
-    <div>
-      <h1>Welcome to Shopping cart</h1>
+    <div className='App'>
+      <Router>
+        <Routes>
+          <Route path='/' />
+          <Route path='/cart' />
+        </Routes>
+
+        </Router> 
     </div>
   );
 }
